@@ -37,6 +37,7 @@
     <script src="js/jquery.inview.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/load_pc_list.js"></script>
 
 </head><!--/head-->
 
@@ -821,77 +822,15 @@
                         margin: auto;
                     }
                 </style>
-                <p class="text-center wow fadeInDown">More names will be added below once confirmed.</p>
-                <table class="tg" width="600" align="center">
-                    <thead>
-                        <tr>
-                            <th class="tg-73oq">
-                                <ul class="nostyle">
-                                    <li><i class="fa fa-circle"></i> Abdulkadir Erol, Georgia State University, USA.</li>
-                                    <li><i class="fa fa-circle"></i> <a href="https://www.linkedin.com/in/agnik-saha/" target="_blank">Agnik Saha</a>, Georgia State University, USA.</li>
-                                    <li><i class="fa fa-circle"></i> Amy Chen, Georgia Tech, USA.</li>
-                                    <li><i class="fa fa-circle"></i> <a href="https://btrantruong.github.io/" target="_blank">Bao Tran Truong</a>, Indiana University, USA.</li>
-                                    <li><i class="fa fa-circle"></i> <a href="https://www.cc.gatech.edu/people/bing-he" target="_blank">Bing He</a>, Georgia Tech, USA.</li>
-                                    <li><i class="fa fa-circle"></i> <a href="https://canyuchen.com/" target="_blank">Canyu Chen</a>, Illinois Institute of Technology, USA.</li>
-                                    <li><i class="fa fa-circle"></i> <a href="https://www.ifi.uzh.ch/en/scg/people/Hu.html" target="_blank">Desheng Hu</a>, University of Zurich, Switzerland.</li>
-                                    <li><i class="fa fa-circle"></i> <a href="https://do-won.github.io/" target="_blank">Do Won Kim</a>, University of Maryland, USA.</li>
-                                    <li><i class="fa fa-circle"></i> <a href="https://seclab.bu.edu/people/gianluca/" target="_blank">Gianluca Stringhini</a>, Boston University, USA.</li>
-                                    <li><i class="fa fa-circle"></i> <a href="https://www.linkedin.com/in/loukas-ilias-7ba32b160/" target="_blank">Loukas Ilias</a>, National Technical University of Athens, Greece.</li>
-                                    <li><i class="fa fa-circle"></i> <a href="http://quarbby.github.io" target="_blank">Lynnette Hui Xian Ng</a>, Carnegie Mellon University, USA.</li>
-                                    <li><i class="fa fa-circle"></i> <a href="https://www.ozgurcanseckin.com/" target="_blank">Özgür Can Seçkin</a>, Indiana University, USA.</li>
-                                    <li><i class="fa fa-circle"></i> <a href="https://rachithaiyappa.github.io/" target="_blank">Rachith Aiyappa</a>, Indiana University, USA.</li>
-                                    <li><i class="fa fa-circle"></i> <a href="https://ronaldedwardrobertson.com/" target="_blank">Ronald Robertson</a>, Stanford University, USA.</li>
-                                    <li><i class="fa fa-circle"></i> Trilok Padhi, Georgia State University, USA.</li>
-                                    <li><i class="fa fa-circle"></i> <a href="https://tugrulcan.com/" target="_blank">Tuğrulcan Elmas</a>, University of Edinburgh, Scotland.</li>
-                                    <li><i class="fa fa-circle"></i> Vedant Khandelwal, AI Institute, University of South Carolina, USA.</li>
-                                    <li><i class="fa fa-circle"></i> <a href="https://ytongdou.com/" target="_blank">Yingtong Dou</a>, Visa Research, USA.</li>
-                                    <li><i class="fa fa-circle"></i> <a href="https://zhouhanc.com/" target="_blank">Zhouhan Chen</a>, Safe Link Network.</li>
-                                    <li><i class="fa fa-circle"></i> <a href="http://atauslu.com/" target="_blank">Ata Aydin Uslu</a>, Northeastern University.</li>
-                                    <li><i class="fa fa-circle"></i> <a href="https://sites.google.com/view/fanhuang/" target="_blank">Fan Huang</a>, Indiana University Bloomington, USA.</li>
-                                    <li><i class="fa fa-circle"></i> <a href="https://www.linkedin.com/in/siyi-zhou-ab2664108" target="_blank">Siyi Zhou</a>, University of Southern California, USA.</li>
-                                    <li><i class="fa fa-circle"></i> <a href="https://www.umass.edu/earth-geography-climate/about/directory/hongyu-zhang" target="_blank">Hongyu Zhang</a>, University of Massachusetts Amherst, USA.</li>
-                                    <li><i class="fa fa-circle"></i> <a href="bartleyn.github.io" target="_blank">Nathan Bartley</a>, University of Southern California, USA.</li>
-                                </ul>
-                            </th>
-                        </tr>
-                    </thead>
-                </table>
+
+                <p class="text-center wow fadeInDown">More names may be added below once confirmed.</p>
+
+                <!-- Javascript adds the pc members list-->
+                <div id="pc-list"></div>
             </div>
 
-            <!-- <div">
-                <p style="font-size: 12px;">References:</p>
-                <ol style="line-height: 1.2em;">
-                    <li id="fnote-1" style="font-size: 12px"><a href="https://pewrsr.ch/3DoGjtM" target="_blank">Pew Research Center (2021)</a></li>
-                    <li id="fnote-2" style="font-size: 12px"><a href="https://www.nature.com/articles/s41562-021-01056-1" target="_blank">Loomba et al. (2021)</a></li>
-                    <li id="fnote-3" style="font-size: 12px"><a href="http://workshop-proceedings.icwsm.org/abstract?id=2021_11" target="_blank">Pierri et al. (2021)</a></li>
-                    <li id="fnote-4" style="font-size: 12px"><a href="https://ojs.aaai.org/index.php/ICWSM/article/view/18122" target="_blank">DeVerna et al. (2021)</a></li>
-                    <li id="fnote-5" style="font-size: 12px"><a href="https://www.thelancet.com/journals/landig/article/PIIS2589-7500(19)30136-0/fulltext" target="_blank">Burki (2019)</a></li>
-                </ol> 
-            </div> -->
-
         </div>
-    </section><!--/#meet-team-->
-
-
-
-    <!--    <section id="venue">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">Venue</h2>
-                <p class="text-center wow fadeInDown">The CySoc 2020 workshop will be held at <strong>the Georgia Tech Hotel and Conference Center</strong> located at 800 Spring St. NW, Atlanta, GA 30308.</p>
-            </div>
-        </div>
-    </section> -->
-
-    <!--    <section id="map">
-        <div class="container-wrapper">
-            <div class="container">
-                <div class="row">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.3907433996224!2d-84.39145404994025!3d33.77640643956967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f504668dbafc53%3A0xac760b611b8971d2!2sGeorgia%20Tech%20Hotel%20and%20Conference%20Center!5e0!3m2!1sen!2sus!4v1583398348130!5m2!1sen!2sus" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                </div>
-            </div>
-        </div>
-    </section> -->
+    </section>
 
     <footer id="footer">
         <div class="container">
@@ -904,7 +843,6 @@
             </div>
         </div>
     </footer><!--/#footer-->
-
 </body>
 
 </html>

@@ -133,6 +133,11 @@ jQuery(function($) {'use strict';
 	//smoothScroll
 	smoothScroll.init();
 
+	// Trigger loading of PC list
+	if (typeof loadPcList === 'function') {
+	    loadPcList();
+	}
+
 	// portfolio filter
 	$(window).load(function(){'use strict';
 		var $portfolio_selectors = $('.portfolio-filter >li>a');
