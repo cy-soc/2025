@@ -1,2 +1,2 @@
 *.DS_Store
-*cysoc_pc_list.csv
+data/cysoc_pc_list.csv
