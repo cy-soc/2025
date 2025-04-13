@@ -28,8 +28,10 @@ def main():
     args = parser.parse_args()
 
     df = pd.read_csv(args.filepath)
-    # Filter rows where response is "Confirmed"
-    confirmed_df = df[df["response"] == "Confirmed"]
+    pd.set_option("future.no_silent_downcasting", True)
+    # Filter rows where folks have accepted the invitation (column is boolean)
+    df["accepted_on_easychair"] = df["accepted_on_easychair"].fillna(False).astype(bool)
+    confirmed_df = df[df["accepted_on_easychair"]].copy()
     # Sort by first name alphabetically (ignoring case)
     confirmed_df = confirmed_df.sort_values(
         by="name",
