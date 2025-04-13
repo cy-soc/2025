@@ -30,6 +30,13 @@ def main():
     df = pd.read_csv(args.filepath)
     # Filter rows where response is "Confirmed"
     confirmed_df = df[df["response"] == "Confirmed"]
+    # Sort by first name alphabetically (ignoring case)
+    confirmed_df = confirmed_df.sort_values(
+        by="name",
+        key=lambda col: col.fillna("").apply(
+            lambda x: x.split()[0].lower() if x.strip() else ""
+        ),
+    )
 
     # Determine output file path
     output_path = (
